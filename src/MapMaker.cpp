@@ -7,9 +7,7 @@ MapMaker::MapMaker() {
 			map[i][j] = EMPTY;
 		}
 	}
-
-	occupied = false;
-
+	
 	grass.setOrigin(grass.getSize() / 2.f);
 	grassForTop.setOrigin(grass.getSize() / 2.f);
 	stone.setOrigin(stone.getSize() / 2.f);
@@ -347,3 +345,4 @@ void MapMaker::Draw(sf::RenderWindow& window) {
 	window.draw(brickButton);
 	window.draw(brickButtonTxt);
 }
+
