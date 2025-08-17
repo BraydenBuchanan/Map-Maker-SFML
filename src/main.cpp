@@ -58,6 +58,9 @@ int main() {
 	instructions.setString("Press I/O to zoom in and out, drag using right click");
 	instructions.setPosition(12.f, -42.f);
 
+	int objectOffsetX = 0;
+	int objectOffsetY = 0;
+	
 	while (window.isOpen()) {
 		window.clear(sf::Color::Black);
 
@@ -147,10 +150,7 @@ int main() {
 				mapMaker.placeBrick(posX, posY);
 
 			sf::Vector2i lastMousePos;
-
-			int objectOffsetX = 0;
-			int objectOffsetY = 0;
-
+			
 			if (event.type == event.Closed)
 				window.close();
 
@@ -238,4 +238,5 @@ int main() {
 
 		window.display();
 	}
+
 }
