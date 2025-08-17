@@ -119,6 +119,4 @@ private:
 	std::unique_ptr<sf::Texture> brickTexture;
 
 	Assets assets;
-
-	bool occupied;
 };
